@@ -1,0 +1,9 @@
+{
+  "gmail_address": "your.gmail@gmail.com",
+  "gmail_app_password": "xxxx xxxx xxxx xxxx",
+  "alert_email": "recipient@example.com",
+  "_notes": {
+    "gmail_app_password": "Generate at https://myaccount.google.com/apppasswords — requires 2FA enabled on your Google account",
+    "alert_email": "Where to send alerts — can be the same as gmail_address or a different address"
+  }
+}

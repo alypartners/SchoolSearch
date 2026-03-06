@@ -1,0 +1,46 @@
+name: Austin ISD Property Monitor
+
+on:
+  schedule:
+    # 9 AM Central Time = 15:00 UTC (CST) / 14:00 UTC (CDT)
+    - cron: "0 15 * * *"
+  workflow_dispatch:  # Allow manual trigger from GitHub UI
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Write config from secrets
+        run: |
+          cat > config.json << 'EOF'
+          {
+            "gmail_address": "${{ secrets.GMAIL_ADDRESS }}",
+            "gmail_app_password": "${{ secrets.GMAIL_APP_PASSWORD }}",
+            "alert_email": "${{ secrets.ALERT_EMAIL }}"
+          }
+          EOF
+
+      - name: Run monitor
+        run: python monitor.py
+
+      - name: Commit updated state and dashboard
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/state.json dashboard/index.html
+          git diff --staged --quiet || git commit -m "chore: update state and dashboard [$(date -u '+%Y-%m-%d %H:%M UTC')]"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
