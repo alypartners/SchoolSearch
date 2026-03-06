@@ -24,13 +24,21 @@ jobs:
 
       - name: Write config from secrets
         run: |
-          cat > config.json << 'EOF'
-          {
-            "gmail_address": "${{ secrets.GMAIL_ADDRESS }}",
-            "gmail_app_password": "${{ secrets.GMAIL_APP_PASSWORD }}",
-            "alert_email": "${{ secrets.ALERT_EMAIL }}"
+          python3 -c "
+          import json, os
+          emails = os.environ['ALERT_EMAIL'].split(',')
+          config = {
+            'gmail_address': os.environ['GMAIL_ADDRESS'],
+            'gmail_app_password': os.environ['GMAIL_APP_PASSWORD'],
+            'alert_email': emails
           }
-          EOF
+          with open('config.json', 'w') as f:
+            json.dump(config, f)
+          "
+        env:
+          GMAIL_ADDRESS: ${{ secrets.GMAIL_ADDRESS }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          ALERT_EMAIL: ${{ secrets.ALERT_EMAIL }}
 
       - name: Run monitor
         run: python monitor.py
