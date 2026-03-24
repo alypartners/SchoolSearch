@@ -211,12 +211,13 @@ def main():
         sys.exit(0 if ok else 1)
 
     # Import all scrapers
-    from scrapers import public_surplus, aisd_press, aisd_facilities, boarddocs, loopnet, crexi, tcad
+    from scrapers import public_surplus, aisd_press, aisd_facilities, aisd_community, boarddocs, loopnet, crexi, tcad
 
     scraper_modules = [
         ("public_surplus", public_surplus),
         ("aisd_press", aisd_press),
         ("aisd_facilities", aisd_facilities),
+        ("aisd_community", aisd_community),
         ("boarddocs", boarddocs),
         ("loopnet", loopnet),
         ("crexi", crexi),
