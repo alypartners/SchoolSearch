@@ -176,6 +176,7 @@ def generate_dashboard(schools: List[Dict], state: Dict, all_changes: List[Dict]
   <ul>
     <li><a href="https://www.publicsurplus.com/sms/austinisd,tx/browse/home">PublicSurplus — AISD Auctions</a></li>
     <li><a href="https://www.austinisd.org/press-releases">AISD Press Releases</a></li>
+    <li><a href="https://www.austinisd.org/facilities">AISD Facilities / Surplus Property Pages</a></li>
     <li><a href="https://go.boarddocs.com/tx/austinisd/Board.nsf/Public">BoardDocs — Board Meeting Agendas</a></li>
     <li><a href="https://www.loopnet.com/search/commercial-real-estate/austin-tx/for-sale/">LoopNet — Commercial Listings</a></li>
     <li><a href="https://www.crexi.com/properties">Crexi — Commercial Listings</a></li>
@@ -210,11 +211,12 @@ def main():
         sys.exit(0 if ok else 1)
 
     # Import all scrapers
-    from scrapers import public_surplus, aisd_press, boarddocs, loopnet, crexi, tcad
+    from scrapers import public_surplus, aisd_press, aisd_facilities, boarddocs, loopnet, crexi, tcad
 
     scraper_modules = [
         ("public_surplus", public_surplus),
         ("aisd_press", aisd_press),
+        ("aisd_facilities", aisd_facilities),
         ("boarddocs", boarddocs),
         ("loopnet", loopnet),
         ("crexi", crexi),

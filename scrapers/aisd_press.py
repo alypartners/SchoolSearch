@@ -26,6 +26,9 @@ PROPERTY_KEYWORDS = [
     "sale", "sell", "sold", "property", "surplus", "bid", "rfp",
     "request for proposal", "real estate", "disposition", "convey",
     "auction", "lease", "facility", "campus closure", "closed campus",
+    "repurpose", "repurposing", "surplus property repurposing",
+    "community input", "facility evaluation", "community meeting",
+    "entitlement", "market analysis", "facility condition",
 ]
 
 
