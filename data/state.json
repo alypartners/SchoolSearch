@@ -1,44 +1,44 @@
 {
-  "last_run": "2026-09-24T18:46:51.173955+00:00",
+  "last_run": "2026-09-25T19:04:20.696839+00:00",
   "scrapers": {
     "public_surplus": {
       "hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
-      "last_checked": "2026-09-24T18:45:09.083787+00:00",
+      "last_checked": "2026-09-25T19:02:40.619466+00:00",
       "changes_found": 0
     },
     "aisd_press": {
       "hash": "e8a06afcb52aa207c05257ab31aacd7e64b50cc97c36e944732b73205fde692d",
-      "last_checked": "2026-09-24T18:45:09.498343+00:00",
+      "last_checked": "2026-09-25T19:02:41.049938+00:00",
       "changes_found": 0
     },
     "aisd_facilities": {
-      "hash": "9ca688731c4a09307c0f1570e97d4f18c027c38104fdf0738bbc1377e4a11da3",
-      "last_checked": "2026-09-24T18:45:11.270509+00:00",
+      "hash": "8252bd23b724fcbe87290a272880a482fa81b0a3eaf834f5807ea50bcd7d724d",
+      "last_checked": "2026-09-25T19:02:43.064356+00:00",
       "changes_found": 0
     },
     "aisd_community": {
       "hash": "2b009c4fc6038caec9b83f2a03356cd65a9c7470a1beff066d3ec6a992044ad4",
-      "last_checked": "2026-09-24T18:45:13.718302+00:00",
+      "last_checked": "2026-09-25T19:02:45.511766+00:00",
       "changes_found": 0
     },
     "boarddocs": {
       "hash": "ERROR",
-      "last_checked": "2026-09-24T18:45:14.764373+00:00",
+      "last_checked": "2026-09-25T19:02:46.838821+00:00",
       "changes_found": 0
     },
     "loopnet": {
       "hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
-      "last_checked": "2026-09-24T18:45:48.171494+00:00",
+      "last_checked": "2026-09-25T19:03:20.499664+00:00",
       "changes_found": 0
     },
     "crexi": {
       "hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
-      "last_checked": "2026-09-24T18:46:25.017942+00:00",
+      "last_checked": "2026-09-25T19:03:55.646177+00:00",
       "changes_found": 0
     },
     "tcad": {
       "hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
-      "last_checked": "2026-09-24T18:46:51.173930+00:00",
+      "last_checked": "2026-09-25T19:04:20.696813+00:00",
       "changes_found": 0
     }
   }
