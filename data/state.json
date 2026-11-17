@@ -1,44 +1,44 @@
 {
-  "last_run": "2026-11-16T23:36:33.307932+00:00",
+  "last_run": "2026-11-17T22:45:08.186604+00:00",
   "scrapers": {
     "public_surplus": {
       "hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
-      "last_checked": "2026-11-16T23:34:57.701966+00:00",
+      "last_checked": "2026-11-17T22:43:31.154141+00:00",
       "changes_found": 0
     },
     "aisd_press": {
       "hash": "76178be34c147570bbfe31eecb4b21e58c601b5fa5e59313a682e3b179d08f4d",
-      "last_checked": "2026-11-16T23:34:57.999717+00:00",
+      "last_checked": "2026-11-17T22:43:31.551541+00:00",
       "changes_found": 0
     },
     "aisd_facilities": {
       "hash": "8252bd23b724fcbe87290a272880a482fa81b0a3eaf834f5807ea50bcd7d724d",
-      "last_checked": "2026-11-16T23:34:59.972193+00:00",
+      "last_checked": "2026-11-17T22:43:33.376014+00:00",
       "changes_found": 0
     },
     "aisd_community": {
       "hash": "2b009c4fc6038caec9b83f2a03356cd65a9c7470a1beff066d3ec6a992044ad4",
-      "last_checked": "2026-11-16T23:35:02.697969+00:00",
+      "last_checked": "2026-11-17T22:43:35.378246+00:00",
       "changes_found": 0
     },
     "boarddocs": {
       "hash": "ERROR",
-      "last_checked": "2026-11-16T23:35:02.840191+00:00",
+      "last_checked": "2026-11-17T22:43:35.590846+00:00",
       "changes_found": 0
     },
     "loopnet": {
       "hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
-      "last_checked": "2026-11-16T23:35:35.597972+00:00",
+      "last_checked": "2026-11-17T22:44:10.772452+00:00",
       "changes_found": 0
     },
     "crexi": {
       "hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
-      "last_checked": "2026-11-16T23:36:08.448737+00:00",
+      "last_checked": "2026-11-17T22:44:43.265406+00:00",
       "changes_found": 0
     },
     "tcad": {
       "hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
-      "last_checked": "2026-11-16T23:36:33.307913+00:00",
+      "last_checked": "2026-11-17T22:45:08.186580+00:00",
       "changes_found": 0
     }
   }
